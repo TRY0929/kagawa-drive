@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>香川日帰りドライブ 🚗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero" id="hero">
+  <div class="hero-eyebrow">Personal Drive Log</div>
+  <h1 class="hero-title">高松、うどん、そして<br>海辺のカフカ</h1>
+  <p class="hero-note">
+    村上春樹の小説に出てくる高松の図書館、あの描写を読んでから
+    <em>「絶対行かなきゃ」</em>ってずっと思ってた。
+    うどんも本場で食べたいし、瀬戸内の海も見たい。
+    日帰りドライブで全部やる。
+  </p>
+  <div class="meta-row">
+    <span class="meta-chip">📍 川西（兵庫）発</span>
+    <span class="meta-chip">🗓 8月お盆</span>
+    <span class="meta-chip">⏰ 09:00〜21:00</span>
+    <span class="meta-chip">🚗 約500km</span>
+  </div>
+</header>
+
+<div class="tab-wrap">
+  <div class="tab-row">
+    <button class="tab-btn active-sunny" id="btn-sunny" onclick="switchTab('sunny')">☀️ 晴天ルート</button>
+    <button class="tab-btn" id="btn-rainy" onclick="switchTab('rainy')">🌧️ 雨天アレンジ</button>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- ===================== SUNNY ===================== -->
+  <div id="tab-sunny" class="tab-content active">
+    <div class="banner sunny">
+      <span>☀️</span>
+      <span>庭園、港、夕日のフルコース。晴れたらこれ以外ない王道ルート。</span>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-track sunny"></div>
+
+      <!-- 出発 -->
+      <div class="tl-item">
+        <div class="tl-dot dot-gray">🚗</div>
+        <div>
+          <div class="tl-time"><strong>09:00</strong></div>
+          <details class="card">
+            <summary>
+              <div class="card-top">
+                <div class="card-title-row">
+                  <span class="card-title">川西を出発</span>
+                </div>
+                <span class="badge b-drive">移動</span>
+              </div>
+              <div class="card-summary-row">
+                <span class="card-summary-line">阪神高速 → 神戸淡路鳴門道</span>
+                <span class="price-tag">ETC代 約2,500円</span>
+              </div>
+              <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
+            </summary>
+            <div class="card-detail">
+              <p class="card-desc">ルートは <strong>阪神高速7号北神戸線 → 神戸淡路鳴門自動車道</strong>。高速乗ったら窓から見える明石大橋が徐々に近づいてくるのが最高のオープニング。</p>
+              <p class="card-desc">お盆シーズンは早朝の方が空いてる。9時出発でも行きの渋滞はほぼない。帰りが問題。</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <!-- 淡路島SA -->
+      <div class="tl-item">
+        <div class="tl-dot dot-sun">🛣</div>
+        <div>
+          <div class="tl-time"><strong>10:00</strong> 〜 <strong>11:00</strong></div>
+          <details class="card">
+            <summary>
+              <div class="card-top">
+                <div class="card-title-row">
+                  <span class="card-title">淡路島SA（下り）でひと休み</span>
+                </div>
+                <span class="badge b-view">絶景</span>
+              </div>
+              <div class="card-summary-row">
+                <span class="card-summary-line">SAでのんびり、橋を間近に</span>
+                <span class="price-tag">無料（飲食別）</span>
+              </div>
+              <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
+            </summary>
+            <div class="card-detail">
+              <p class="card-desc">明石海峡大橋を渡ってすぐの大型SA。展望台から橋の全景がほんとに圧巻。「とりあえず写真撮っとけ」な場所。</p>
+              <p class="card-desc">SAの中には <strong>淡路島産の玉ねぎ使ったフード</strong> がいっぱいある（淡路バーガー、たまねぎスープなど）。道の駅的な感覚でお土産も充実。<strong>淡路島も実は初めてなら</strong>、橋のたもとの景色だけでも「来てよかった」ってなるはず。</p>
+              <div class="detour">
+                <div class="detour-title">⏱ 時間あるなら</div>
+                <p>SAに隣接する「淡路ハイウェイオアシス」へ。無料の花の回廊や展望デッキがあって、本州〜淡路島〜四国が一望できる。往復20分あれば十分。</p>
+              </div>
+              <div class="link-row" style="margin-top:12px;">
+                <a href="https://maps.google.com/?q=淡路サービスエリア+下り" target="_blank" rel="noopener" class="lbtn lbtn-maps">🗺 Google Maps</a>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <!-- うどんランチ -->
+      <div class="tl-item">
+        <div class="tl-dot dot-sun">🍜</div>
+        <div>
+          <div class="tl-time"><strong>12:30</strong> 〜 <strong>14:00</strong></div>
+          <details class="card">
+            <summary>
+              <div class="card-top">
+                <div class="card-title-row">
+                  <span class="card-title">本場の讃岐うどん、ついに食う</span>
+                </div>
+                <span class="badge b-food">食事</span>
+              </div>
+              <div class="card-summary-row">
+                <span class="card-summary-line">行列覚悟。でも食べたら分かる</span>
+                <span class="price-tag">600〜900円/人</span>
+              </div>
+              <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
+            </summary>
+            <div class="card-detail">
+              <p class="card-desc">香川来たらうどんは絶対外せない。でも正直、どこで食べても美味い。都会のうどんとは別物のコシと出汁。</p>
+              <div class="shop-list">
+                <div class="shop">
+                  <div class="shop-name">うどんバカ一代 <span class="price-tag" style="margin-left:6px;">〜800円</span></div>
+                  <div class="shop-desc">名物は「釜バターうどん」。バター＋黄身＋醤油をかき混ぜると、まじでパスタみたいなコクになる。回転が早いから行列でも意外と早く入れる。</div>
+                  <div class="link-row">
+                    <a href="https://maps.google.com/?q=うどんバカ一代+高松市" target="_blank" rel="noopener" class="lbtn lbtn-maps">🗺 Maps</a>
+                    <a href="https://tabelog.com/kagawa/rstLst/?sk=うどんバカ一代" target="_blank" rel="noopener" class="lbtn lbtn-tabelog">🍽 食べログ</a>
+                  </div>
+                </div>
+                <div class="shop">
+                  <div class="shop-name">わら家 <span class="price-tag" style="margin-left:6px;">800〜1,200円</span></div>
+                  <div class="shop-desc">茅葺き屋根の古民家でたらい入りの「釜あげうどん」。雰囲気込みで食べる体験型うどん。時間かけてゆっくりいきたいときはこっち。</div>
+                  <div class="link-row">
+                    <a href="https://maps.google.com/?q=わら家+高松市+うどん" target="_blank" rel="noopener" class="lbtn lbtn-maps">🗺 Maps</a>
+                    <a href="https://tabelog.com/kagawa/rstLst/?sk=わら家+高松" target="_blank" rel="noopener" class="lbtn lbtn-tabelog">🍽 食べログ</a>
+                  </div>
+                </div>
+              </div>
+              <div class="detour">
+                <div class="detour-title">⏱ うどん好きなら</div>
+                <p>「うどん県」なのでセルフ式の激安店が無数にある。うどん1杯200〜300円で食べられる「製麺所系」の店もあるのでハシゴも楽しい。</p>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <!-- 栗林公園 -->
+      <div class="tl-item">
+        <div class="tl-dot dot-sun">🌲</div>
+        <div>
+          <div class="tl-time"><strong>14:30</strong> 〜 <strong>16:00</strong></div>
+          <details class="card">
+            <summary>
+              <div class="card-top">
+                <div class="card-title-row">
+                  <span class="card-title">特別名勝 栗林公園</span>
+                </div>
+                <span class="badge b-spot">観光</span>
+              </div>
+              <div class="card-summary-row">
+                <span class="card-summary-line">ミシュラン三ツ星の大名庭園</span>
+                <span class="price-tag">入園 410円</span>
+              </div>
+              <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
+            </summary>
+            <div class="card-detail">
+              <p class="card-desc">江戸時代から400年かけて作られた大名庭園。6つの池と13の築山が組み合わさって、どこを切り取っても「絵になる」景色が続く。ミシュラン三ツ星というのも納得。</p>
+              <p class="card-desc">展望台の <strong>「飛来峰」</strong> からの眺めが一番のハイライト。松の木越しに池が見えて、これぞ日本庭園って感じ。お盆は暑いので <strong>掬月亭で冷やし抹茶（600円）</strong> 休憩を挟むのがおすすめ。</p>
+              <div class="detour">
+                <div class="detour-title">📖 カフカとの接点</div>
+                <p>「海辺のカフカ」に登場する「甲村記念図書館」のモデルは高松市立図書館（丸亀町商店街付近）とも。栗林公園から車で10分。時間あったら寄ってみて。</p>
+              </div>
+              <div class="link-row" style="margin-top:12px;">
+                <a href="https://maps.google.com/?q=栗林公園+高松市" target="_blank" rel="noopener" class="lbtn lbtn-maps">🗺 Google Maps</a>
+                <a href="https://ritsuringarden.jp/" target="_blank" rel="noopener" class="lbtn lbtn-official">🌐 公式サイト</a>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <!-- 北浜alley -->
+      <div class="tl-item">
+        <div class="tl-dot dot-sun">☕</div>
+        <div>
+          <div class="tl-time"><strong>16:30</strong> 〜 <strong>17:30</strong></div>
+          <details class="card">
+            <summary>
+              <div class="card-top">
+                <div class="card-title-row">
+                  <span class="card-title">北浜alley でひと息</span>
+                </div>
+                <span class="badge b-cafe">カフェ</span>
+              </div>
+              <div class="card-summary-row">
+                <span class="card-summary-line">昭和の倉庫がおしゃれスポットに</span>
+                <span class="price-tag">カフェ 600〜1,200円</span>
+              </div>
+              <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
+            </summary>
+            <div class="card-detail">
+              <p class="card-desc">昭和初期の港湾倉庫をリノベしたエリア。海に面した古い建物の中にカフェや雑貨屋が入ってて、散歩してるだけで楽しい。写真も映える。</p>
+              <div class="shop-list">
+                <div class="shop">
+                  <div class="shop-name">Umie <span class="price-tag" style="margin-left:6px;">700〜1,200円</span></div>
+                  <div class="shop-desc">倉庫の中の人気カフェ。窓から海が見えて、夕方にドリンクとケーキ食べながらぼーっとするのが最高。</div>
+                  <div class="link-row">
+                    <a href="https://maps.google.com/?q=Umie+北浜alley+高松" target="_blank" rel="noopener" class="lbtn lbtn-maps">🗺 Maps</a>
+                    <a href="https://tabelog.com/kagawa/rstLst/?sk=Umie+北浜" target="_blank" rel="noopener" class="lbtn lbtn-tabelog">🍽 食べログ</a>
+                  </div>
+                </div>
+              </div>
+              <div class="link-row" style="margin-top:12px;">
+                <a href="https://maps.google.com/?q=北浜alley+高松市" target="_blank" rel="noopener" class="lbtn lbtn-maps">🗺 北浜alley</a>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <!-- サンポート -->
+      <div class="tl-item">
+        <div class="tl-dot dot-sun">🌅</div>
+        <div>
+          <div class="tl-time"><strong>17:45</strong> 〜 <strong>18:30</strong></div>
+          <details class="card">
+            <summary>
+              <div class="card-top">
+                <div class="card-title-row">
+                  <span class="card-title">サンポート高松で夕日を見る</span>
+                </div>
+                <span class="badge b-view">夕景</span>
+              </div>
+              <div class="card-summary-row">
+                <span class="card-summary-line">瀬戸内に沈む夕日</span>
+                <span class="price-tag">無料</span>
+              </div>
+              <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
+            </summary>
+            <div class="card-detail">
+              <p class="card-desc">高松港のウォーターフロント。「せとシーサイドプロムナード」を歩きながら瀬戸内に沈む夕日を見る。フェリーが行き交う光景がのどかで、ここが一日のクライマックスになる気がする。</p>
+              <p class="card-desc">直島や小豆島への定期便もここから出てる。「いつかフェリーで島に行きたい」という気持ちが高まる場所。</p>
+              <div class="link-row" style="margin-top:4px;">
+                <a href="https://maps.google.com/?q=サンポート高松" target="_blank" rel="noopener" class="lbtn lbtn-maps">🗺 Google Maps</a>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <!-- 骨付鳥 -->
+      <div class="tl-item">
+        <div class="tl-dot dot-sun">🍗</div>
+        <div>
+          <div class="tl-time"><strong>18:30</strong> 〜 <strong>19:30</strong></div>
+          <details class="card">
+            <summary>
+              <div class="card-top">
+                <div class="card-title-row">
+                  <span class="card-title">夕食：骨付鳥でしめる</span>
+                </div>
+                <span class="badge b-food">食事</span>
+              </div>
+              <div class="card-summary-row">
+                <span class="card-summary-line">香川のもう一つのソウルフード</span>
+                <span class="price-tag">1,500〜2,500円/人</span>
+              </div>
+              <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
+            </summary>
+            <div class="card-detail">
+              <p class="card-desc">讃岐うどんと並ぶ香川のソウルフード。ニンニクとスパイスが効いた鶏を丸ごと一本豪快にかぶりつく。「若鶏（やわらか）」と「親鶏（コリコリで旨みが濃い）」の2種類があって、両方頼んで食べ比べるのが正解。鶏の脂が染みたキャベツも絶品。</p>
+              <div class="shop-list">
+                <div class="shop">
+                  <div class="shop-name">一鶴（いっかく）高松店 <span class="price-tag" style="margin-left:6px;">1,500〜2,500円</span></div>
+                  <div class="shop-desc">骨付鳥の元祖。行列は覚悟の上で。ここを外したら香川に来た意味がない、くらいの名店。</div>
+                  <div class="link-row">
+                    <a href="https://maps.google.com/?q=一鶴+骨付鳥+高松" target="_blank" rel="noopener" class="lbtn lbtn-maps">🗺 Maps</a>
+                    <a href="https://tabelog.com/kagawa/rstLst/?sk=一鶴+骨付鳥" target="_blank" rel="noopener" class="lbtn lbtn-tabelog">🍽 食べログ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <!-- 帰着 -->
+      <div class="tl-item">
+        <div class="tl-dot dot-gray">🏠</div>
+        <div>
+          <div class="tl-time"><strong>21:00</strong></div>
+          <details class="card">
+            <summary>
+              <div class="card-top">
+                <div class="card-title-row">
+                  <span class="card-title">川西に帰着</span>
+                </div>
+                <span class="badge b-drive">移動</span>
+              </div>
+              <div class="card-summary-row">
+                <span class="card-summary-line">お疲れ！渋滞次第で迂回も</span>
+                <span class="price-tag">ETC代 約2,500円</span>
+              </div>
+              <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
+            </summary>
+            <div class="card-detail">
+              <p class="card-desc">お盆の帰りは淡路島〜神戸が大渋滞しやすい。ナビが赤くなったら <strong>瀬戸大橋（岡山経由）</strong> に迂回する選択肢も持っておくと安心。距離は伸びるけど時間は短縮できることが多い。</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== RAINY ===================== -->
+  <div id="tab-rainy" class="tab-content">
+    <div class="banner rainy">
+      <span>🌧️</span>
+      <span>雨でも屋内中心で全然楽しめる。むしろ雨の瀬戸内もアリ。</span>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-track rainy"></div>
+
+      <div class="tl-item">
+        <div class="tl-dot dot-gray">🚗</div>
+        <div>
+          <div class="tl-time"><strong>09:00</strong></div>
+          <details class="card">
+            <summary>
+              <div class="card-top">
+                <div class="card-title-row"><span class="card-title">川西を出発</span></div>
+                <span class="badge b-drive">移動</span>
+              </div>
+              <div class="card-summary-row">
+                <span class="card-summary-line">雨天は視界悪いので安全優先</span>
+                <span class="price-tag">ETC代 約2,500円</span>
+              </div>
+              <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
+            </summary>
+            <div class="card-detail">
+              <p class="card-desc">雨でも行く。そう決めたら車内の音楽プレイリストを仕込んでおくと気持ちが上がる。雨の高速道路も案外いい。</p>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot dot-rain">☕</div>
+        <div>
+          <div class="tl-time"><strong>10:00</strong> 〜 <strong>11:00</strong></div>
+          <details class="card">
+            <summary>
+              <div class="card-top">
+                <div class="card-title-row"><span class="card-title">淡路島SAで雨の橋を眺める</span></div>
+                <span class="badge b-view">絶景</span>
+              </div>
+              <div class="card-summary-row">
+                <span class="card-summary-line">霧がかる橋もまた一興</span>
+                <span class="price-tag">無料（飲食別）</span>
+              </div>
+              <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
+            </summary>
+            <div class="card-detail">
+              <p class="card-desc">大きなガラス張りの館内から、雨煙に霞む明石海峡大橋を眺める。晴れとはまた違う幻想的な景色。温かいものを飲みながらのんびりしよう。</p>
+              <p class="card-desc">SA内フードコートで淡路島産の玉ねぎスープを飲む。体が温まる。</p>
+              <div class="link-row" style="margin-top:4px;">
+                <a href="https://maps.google.com/?q=淡路サービスエリア+下り" target="_blank" rel="noopener" class="lbtn lbtn-maps">🗺 Google Maps</a>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot dot-rain">🍜</div>
+        <div>
+          <div class="tl-time"><strong>12:30</strong> 〜 <strong>14:00</strong></div>
+          <details class="card">
+            <summary>
+              <div class="card-top">
+                <div class="card-title-row"><span class="card-title">本場讃岐うどんランチ</span></div>
+                <span class="badge b-food">食事</span>
+              </div>
+              <div class="card-summary-row">
+                <span class="card-summary-line">雨の日は熱々うどんが染みる</span>
+                <span class="price-tag">600〜900円/人</span>
+              </div>
+              <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
+            </summary>
+            <div class="card-detail">
+              <div class="shop-list">
+                <div class="shop">
+                  <div class="shop-name">わら家 ← 雨の日はここ推し <span class="price-tag" style="margin-left:6px;">800〜1,200円</span></div>
+                  <div class="shop-desc">茅葺きの大きな軒下があるので、雨でも並んでも比較的濡れない。熱々の釜あげうどんをたらいで食べる体験が最高。</div>
+                  <div class="link-row">
+                    <a href="https://maps.google.com/?q=わら家+高松市+うどん" target="_blank" rel="noopener" class="lbtn lbtn-maps">🗺 Maps</a>
+                    <a href="https://tabelog.com/kagawa/rstLst/?sk=わら家+高松" target="_blank" rel="noopener" class="lbtn lbtn-tabelog">🍽 食べログ</a>
+                  </div>
+                </div>
+                <div class="shop">
+                  <div class="shop-name">うどんバカ一代 <span class="price-tag" style="margin-left:6px;">〜800円</span></div>
+                  <div class="shop-desc">折りたたみ傘とタオル持参で並べば問題なし。釜バターうどんを雨上がりに食べる達成感もある。</div>
+                  <div class="link-row">
+                    <a href="https://maps.google.com/?q=うどんバカ一代+高松市" target="_blank" rel="noopener" class="lbtn lbtn-maps">🗺 Maps</a>
+                    <a href="https://tabelog.com/kagawa/rstLst/?sk=うどんバカ一代" target="_blank" rel="noopener" class="lbtn lbtn-tabelog">🍽 食べログ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot dot-rain">🏛️</div>
+        <div>
+          <div class="tl-time"><strong>14:30</strong> 〜 <strong>16:15</strong></div>
+          <details class="card">
+            <summary>
+              <div class="card-top">
+                <div class="card-title-row"><span class="card-title">香川県立ミュージアム</span></div>
+                <span class="badge b-museum">屋内</span>
+              </div>
+              <div class="card-summary-row">
+                <span class="card-summary-line">完全屋内。クーラー効いて快適</span>
+                <span class="price-tag">入館 200円</span>
+              </div>
+              <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
+            </summary>
+            <div class="card-detail">
+              <p class="card-desc">栗林公園の向かいにある歴史・文化ミュージアム。旧石器時代から現代まで香川の歴史が展示されていて、うどん文化や瀬戸内の産業についても学べる。雨の午後をゆったり過ごすのにちょうどいい規模感。</p>
+              <p class="card-desc">近くに <strong>高松市美術館</strong> もあり（入館300円〜）。こっちは現代アート系。</p>
+              <div class="link-row" style="margin-top:4px;">
+                <a href="https://maps.google.com/?q=香川県立ミュージアム" target="_blank" rel="noopener" class="lbtn lbtn-maps">🗺 Google Maps</a>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot dot-rain">☕</div>
+        <div>
+          <div class="tl-time"><strong>16:30</strong> 〜 <strong>17:30</strong></div>
+          <details class="card">
+            <summary>
+              <div class="card-top">
+                <div class="card-title-row"><span class="card-title">北浜alley で雨宿りカフェ</span></div>
+                <span class="badge b-cafe">カフェ</span>
+              </div>
+              <div class="card-summary-row">
+                <span class="card-summary-line">倉庫の中で雨音を聞く</span>
+                <span class="price-tag">カフェ 600〜1,200円</span>
+              </div>
+              <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
+            </summary>
+            <div class="card-detail">
+              <p class="card-desc">建物間の移動だけ少し傘を差せば、あとは倉庫内でゆったりできる。雨音を聞きながら古い倉庫の中でコーヒーを飲む時間、かなり良い。</p>
+              <div class="shop-list">
+                <div class="shop">
+                  <div class="shop-name">Umie <span class="price-tag" style="margin-left:6px;">700〜1,200円</span></div>
+                  <div class="shop-desc">ケーキとコーヒーでゆったり。雨の日の方が人が少なくて落ち着けるかも。</div>
+                  <div class="link-row">
+                    <a href="https://maps.google.com/?q=Umie+北浜alley+高松" target="_blank" rel="noopener" class="lbtn lbtn-maps">🗺 Maps</a>
+                    <a href="https://tabelog.com/kagawa/rstLst/?sk=Umie+北浜" target="_blank" rel="noopener" class="lbtn lbtn-tabelog">🍽 食べログ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot dot-rain">🏢</div>
+        <div>
+          <div class="tl-time"><strong>17:45</strong> 〜 <strong>18:30</strong></div>
+          <details class="card">
+            <summary>
+              <div class="card-top">
+                <div class="card-title-row"><span class="card-title">高松シンボルタワーから雨の海</span></div>
+                <span class="badge b-view">展望</span>
+              </div>
+              <div class="card-summary-row">
+                <span class="card-summary-line">ガラス張り展望、濡れない</span>
+                <span class="price-tag">無料</span>
+              </div>
+              <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
+            </summary>
+            <div class="card-detail">
+              <p class="card-desc">サンポート高松の高層タワー。ガラス越しに雨の瀬戸内海を一望。天気が悪い日の水面は独特のグレーと静けさがあって、これはこれで見る価値がある眺め。</p>
+              <div class="link-row" style="margin-top:4px;">
+                <a href="https://maps.google.com/?q=高松シンボルタワー" target="_blank" rel="noopener" class="lbtn lbtn-maps">🗺 Google Maps</a>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot dot-rain">🍗</div>
+        <div>
+          <div class="tl-time"><strong>18:30</strong> 〜 <strong>19:30</strong></div>
+          <details class="card">
+            <summary>
+              <div class="card-top">
+                <div class="card-title-row"><span class="card-title">夕食：骨付鳥でしめる</span></div>
+                <span class="badge b-food">食事</span>
+              </div>
+              <div class="card-summary-row">
+                <span class="card-summary-line">雨で冷えた体にスパイシーが染みる</span>
+                <span class="price-tag">1,500〜2,500円/人</span>
+              </div>
+              <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
+            </summary>
+            <div class="card-detail">
+              <p class="card-desc">雨の日に外をうろついた後の骨付鳥、最高にうまい。高松駅前なら雨でもアクセス楽。</p>
+              <div class="shop-list">
+                <div class="shop">
+                  <div class="shop-name">一鶴（いっかく）高松店 <span class="price-tag" style="margin-left:6px;">1,500〜2,500円</span></div>
+                  <div class="shop-desc">元祖骨付鳥。若鶏と親鶏の食べ比べが正解。鶏脂が染みたキャベツも頼む。</div>
+                  <div class="link-row">
+                    <a href="https://maps.google.com/?q=一鶴+骨付鳥+高松" target="_blank" rel="noopener" class="lbtn lbtn-maps">🗺 Maps</a>
+                    <a href="https://tabelog.com/kagawa/rstLst/?sk=一鶴+骨付鳥" target="_blank" rel="noopener" class="lbtn lbtn-tabelog">🍽 食べログ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-dot dot-gray">🏠</div>
+        <div>
+          <div class="tl-time"><strong>21:00</strong></div>
+          <details class="card">
+            <summary>
+              <div class="card-top">
+                <div class="card-title-row"><span class="card-title">川西に帰着</span></div>
+                <span class="badge b-drive">移動</span>
+              </div>
+              <div class="card-summary-row">
+                <span class="card-summary-line">雨ドライブお疲れ様！</span>
+                <span class="price-tag">ETC代 約2,500円</span>
+              </div>
+              <svg class="chevron" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
+            </summary>
+            <div class="card-detail">
+              <p class="card-desc">淡路島が渋滞なら瀬戸大橋（岡山経由）へ。雨の日は瀬戸大橋ルートの方が霧で幻想的な橋の景色も見られてアリかも。</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== TIPS ===================== -->
+  <div class="tips">
+    <div class="tips-title">💡 お盆ドライブの成功メモ</div>
+    <div class="tip">
+      <span class="tip-ico">🚦</span>
+      <div><strong>渋滞回避：</strong>帰りの淡路島〜神戸は激混み。ナビ真っ赤なら即「瀬戸大橋（岡山経由）」に切り替え。距離は伸びるが時間は短縮になることが多い。</div>
+    </div>
+    <div class="tip">
+      <span class="tip-ico">🍜</span>
+      <div><strong>うどん屋の営業確認：</strong>お盆は臨時休業の店が多い。前日までに公式SNSか電話で確認を。</div>
+    </div>
+    <div class="tip">
+      <span class="tip-ico">🌡️</span>
+      <div><strong>8月の高松は本当に暑い：</strong>水分多めに持参。栗林公園散策は14〜16時になるので熱中症対策は必須。</div>
+    </div>
+    <div class="tip">
+      <span class="tip-ico">🎒</span>
+      <div><strong>持ち物：</strong>タオル、折りたたみ傘（日傘兼用）、飲み物、ETCカード、モバイルバッテリー。</div>
+    </div>
+    <div class="tip">
+      <span class="tip-ico">💴</span>
+      <div><strong>概算予算：</strong>高速代（往復）約5,000円 ＋ ガソリン代約3,000円 ＋ 飲食・観光費約3,000〜5,000円 = <strong>1人1〜1.5万円</strong> くらい（複数人で割り勘ならさらに安い）。</div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Kagawa Day Trip Drive ☀️🌧️</p>
+  </footer>
+
+</div>
+
+<script>
+  function switchTab(mode) {
+    const isSunny = mode === 'sunny';
+    document.getElementById('tab-sunny').classList.toggle('active', isSunny);
+    document.getElementById('tab-rainy').classList.toggle('active', !isSunny);
+    document.getElementById('btn-sunny').classList.toggle('active-sunny', isSunny);
+    document.getElementById('btn-rainy').classList.toggle('active-rainy', !isSunny);
+    document.getElementById('hero').style.background = isSunny
+      ? 'var(--ink)' : 'var(--ink)';
+  }
+</script>
+
+</body>
+</html>
